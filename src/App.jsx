@@ -70,21 +70,118 @@
 
 
 // const name=["Gaurav" , "Rahul" , "Bhopal" , "Rewa" , "Aman"]
-const age=[12,23,45,67,100,23,54,67,100,23,54,67,100,23,54]
- const mynm= age.map((key)=>{
+// const age=[12,23,45,67,100,23,54,67,100,23,54,67,100,23,54]
+//  const mynm= age.map((key)=>{
+//   return(
+//     <>
+//     <h1>{key*2}</h1>
+//     </>
+//   )
+// });
+
+// const App=() =>{
+//   return(
+//     <>
+//     <h1>Gaurav Singh Array </h1>
+//     {mynm}
+//     </>
+//   )
+// }
+// export default App
+
+
+//===================================================================================
+
+// const Student =[
+//   {
+//     "rollno":121,
+//     "name": "Gaurav" ,
+//     "city":"Bhopal",
+//     "fees":12000000
+//   },
+//   {
+//     "rollno":122,
+//     "name": "Rahul" ,
+//     "city":"Bhopal",
+//     "fees":15000000
+//   },
+//   {
+//     "rollno":123,
+//     "name": "Bhopal" ,
+//     "city":"Bhopal",
+//     "fees":18000000
+//   }
+// ]
+
+
+// const ans = Student.map((key)=>{
+//   return(
+//     <>
+//     <tr>
+//       <td>{key.rollno}</td>
+//       <td>{key.name}</td>
+//       <td>{key.city}</td>
+//       <td>{key.fees}</td>
+//     </tr>
+//     </>
+//   )
+// });
+
+
+// const App = () =>{
+// return(
+//   <table border="1" width="600" align="center">
+//     <tr>
+//       <th>RollNo</th>
+//       <th>Name</th>
+//       <th>City</th>
+//       <th>Fees</th>
+//     </tr>
+//   {ans}
+//   </table>
+
+  
+// )
+// }
+
+
+// export default App;
+
+//===================================================
+
+
+
+import EmpData from "./EmpData";
+
+
+const ans = EmpData.map((key)=>{
   return(
     <>
-    <h1>{key*2}</h1>
+    <tr>
+      <td>{key.empno}</td>
+      <td>{key.name}</td>
+      <td>{key.city}</td>
+      <td>{key.salary}</td>
+    </tr>
     </>
   )
 });
 
-const App=() =>{
+
+const App = () =>{
   return(
     <>
-    <h1>Gaurav Singh Array </h1>
-    {mynm}
+    <table border="1" bgcolor="pink" width="600">
+       <tr>
+        <th>Employee No</th>
+        <th>Name</th>
+        <th>City</th>
+        <th>Salary</th>
+       </tr>
+       {ans}
+    </table>
     </>
   )
 }
-export default App
+
+export default App;
